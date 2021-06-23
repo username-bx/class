@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="" media="screen and (max-width: 1000px)">
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: #fcc;
+            position: absolute;
+            top: 350px;
+
+            animation: text 8s infinite 2s running;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #fcc;
+            position: absolute;
+            top: 350px;
+            padding: 20px;
+            border: 2px solid #def;
+
+            /* ie6 */
+            /* box-sizing: border-box; */
+
+
+            /* 
+            标准盒模型：盒子真实大小= width + padding + border 
+            标准盒模型: 内容区 = width
+            IE :    盒子真实大小 = width 
+            怪异盒砸开： 内容区 = width - padding - border
+
+
+            */
+
+            /* animation: test ease 3s infinite 2s; */
+        }
+
+        /* 屏幕最大宽度小于1000 开始生效 */
+        @media screen and (max-width: 1000px) {
+            .box {
+                width: 150px;
+                height: 150px;
+                background-color: red;
+            }
+        }
+
+        @keyframes test {
+            0% {
+                left: 0;
+            }
+
+            /* 25% {
+                left: 500px;
+            }
+
+            50% {
+                left: 500px;
+            }
+
+            75% {
+                left: 1000px;
+            } */
+
+            100% {
+                left: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1 特殊编码-->
+    <p>下面讲一个
+    <div>
+
+        </p>
+
+        <p>下面讲一个&lt;div&gt;</p>
+
+        <p>你师傅
+
+
+
+
+
+
+
+
+            很帅</p>
+
+        <p>你师傅&nbsp;很帅</p>
+
+        <p>测试&quot;测试</p>
+        <p>测试&reg;测试</p>
+        <p>测试&copy;测试</p>
+
+        <!-- 2 -->
+        username:<input type="text" name="username" autofocus placeholder="请输入用户名">
+        <input type="password">
+        <h3></h3>
+        <input type="radio" name="ba" value="shuai">chou
+        <input type="radio" name="ba"> shuai
+
+        <input type="radio" name="ba">henshuai
+
+        <input type="radio" name="ba">
+
+
+
+
+        <input type="checkbox" name="aa">
+        <input type="checkbox" name="aa">
+
+        <input type="checkbox" name="aa" checked>
+
+
+        <input type="submit" value="">
+
+
+        <!-- 3 -->
+        <div class="box">
+            <!-- ease:开始和结束慢，中间快。相当于cubic-bezier(0.25, 0.1, 0.25, 0.1)
+                linear:匀速。相当于cubic-bezier(0, 0, 1, 1)
+                ease-in:开始慢。相当于cubic-bezier(0.42, 0, 1, 1)
+                ease-out:结束慢。相当于cubic-bezier(0, 0, 0.58, 1)
+                ease-in-out:和ease类似，但比ease幅度大。相当于cubic-bezier(0.42, 0, 0.58, 1)
+                step-start:直接位于结束处。相当于steps(1,start)
+                step-end:位于开始处经过时间间隔后结束。相当于steps(1,end) -->
+            asdfhjkkjsdfgjklkjhgd sdfghjkkjhgdfhjkjhdsfghjhgfsdhgfd
+        </div>
+
+
+
+        <div class="waiceng">
+            <div class="inner">
+                <div class="innerwrapper"><img src="http://www.jq22.com/img/cs/500x500-1.png" alt="banner1"></div>
+                <div class="innerwrapper"><img src="http://www.jq22.com/img/cs/500x300-1.png" alt="banner2"></div>
+                <div class="innerwrapper"><img src="http://www.jq22.com/img/cs/300x500-1.png" alt="banner3"></div>
+                <div class="innerwrapper"><img src="http://www.jq22.com/img/cs/500x500-2.png" alt="banner4"></div>
+                <div class="innerwrapper"><img src="http://www.jq22.com/img/cs/500x500-1.png" alt="banner1"></div>
+            </div>
+        </div>
+
+
+        <div class="demo"></div>
+
+
+
+
+        <audio style="position: fixed; left: 10px; top: 10px;" src="mp3/jijing.mp3" autoplay controls="controls"
+            class="" /></audio>
+
+
+
+
+</body>
+
+</html>
